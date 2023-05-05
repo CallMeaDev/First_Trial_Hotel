@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../bg.jpg);
+ background-size:cover;
+ background-position:center;
+
+
+
+}
+/* only navbar and li */
+.navbar{
+    width: 85%;
+
+    margin: auto;
+    padding: 350px 0 px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 4px -103px;
+  
+   
+   
+}
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+    text-decoration: none;
+  
+}
+.navbar ul li a{
+   text-decoration: none;
+   color:#fff;
+   text-transform: uppercase;
+
+}
+.navbar ul li ::after{
+    content: '';
+    height:3px;
+    width: 0%;
+    background-color: rgb(90, 45, 45);
+    position:absolute;
+    left:0;
+   bottom:-15px;
+
+}
+.navbar ul li :hover::after{
+  
+    width: 100%;
+    transition: 0.5s;
+ 
+}
+/*contents wriiten in the page*/
+.container{
+    width:100%;
+    position: absolute;
+    top: 10%;
+    transform: translate(-50);
+    text-align: center;
+    color: rgb(52 210 166 / 82%);
+    
+}
+/* buttons */
+button{
+font-size: 12px;
+width: 200px;
+padding: 22px 0px;
+text-align: center;
+border: 2px solid  #708d82;
+font-weight: bold;
+margin: 25px 10px;
+border-radius: 25px;
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+cursor: pointer;
+color: #fff;
+background:transparent;
+position: relative;
+overflow: hidden;
+
+}
+
+span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    height: 100%;
+    width: 100%;
+    left:0;
+    bottom: 0;
+  
+  
+
+    ;
+}
+span:hover::before{
+color: black;
+}
